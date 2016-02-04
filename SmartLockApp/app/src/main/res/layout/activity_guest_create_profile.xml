@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#fbfbfb">
+
+    <TextView
+        android:id="@+id/profileTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Create a Profile"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make it easy for your host to identify"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you with with a good picture"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/create_profile_default"
+        />
+    <TableLayout
+        android:stretchColumns="1,2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!--birthday-->
+        <TableRow>
+            <TextView android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Birthday"/>
+            <EditText
+                android:id="@+id/birthdayET"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </TableRow>
+        <!--date picker-->
+        <TableRow
+            android:gravity="center">
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+
+        <!--Gender-->
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:text="Gender"/>
+            <Spinner
+                android:id="@+id/selectGender"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="right">
+
+            </Spinner>
+        </TableRow>
+        <!--Email-->
+        <TableRow>
+            <TextView android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Email"/>
+            <EditText
+                android:id="@+id/emailET"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </TableRow>
+
+        <!--Zip Code-->
+        <TableRow>
+            <TextView android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="ZIP Code"/>
+            <EditText
+                android:id="@+id/zipCodeET"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </TableRow>
+        <!--role-->
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="I am a"/>
+            <Spinner
+                android:id="@+id/selectRole"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="right">
+            </Spinner>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="246dp"
+        android:layout_height="46dp"
+        android:text="Confirm"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/corner"/>
+
+</LinearLayout>

@@ -1,0 +1,295 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.simsim.ui.HostSpaceSettingsActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings"
+            android:gravity="center"
+            android:textColor="#FF9900"
+            android:textSize="18sp"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_lable"
+            android:gravity="left"
+            android:textColor="#FF9900"
+            android:textSize="18sp"
+            android:id="@+id/textView2"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_lock_name"
+            android:gravity="left"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textView3"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textViewtSpaceLockName"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:paddingTop="10dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_lock_id"
+            android:gravity="left"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textView4"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textViewtSpaceLockName"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textViewLockID"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textViewtSpaceLockName"
+            android:layout_alignRight="@+id/textViewtSpaceLockName"
+            android:layout_alignEnd="@+id/textViewtSpaceLockName"
+            android:layout_alignLeft="@+id/textViewtSpaceLockName"
+            android:layout_alignStart="@+id/textViewtSpaceLockName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_setup"
+            android:gravity="left"
+            android:textColor="#FF9900"
+            android:textSize="18sp"
+            android:id="@+id/textView7"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_power"
+            android:gravity="left"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textView8"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7" />
+
+        <SeekBar
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarLockPower"
+            android:layout_alignBottom="@+id/textView8"
+            android:paddingBottom="10dp"
+            android:layout_alignRight="@+id/textViewLockID"
+            android:layout_alignEnd="@+id/textViewLockID"
+            android:max="100" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_rotation"
+            android:gravity="left"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textView9"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarLockRotationEndpoint"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/seekBarLockPower"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignLeft="@+id/seekBarLockPower"
+            android:layout_alignStart="@+id/seekBarLockPower"
+            android:max="360" />
+
+        <Button
+            android:id="@+id/buttonLockSave"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="@string/button_save"
+            android:background="@drawable/corner"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/relativeLayoutLockDirection"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_start_angle"
+            android:gravity="left"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textView5"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_host_lock_settings_end_angle"
+            android:gravity="left"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/textView6"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/editTextLockEndAngle"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayoutLockDirection"
+            android:layout_below="@+id/editTextLockEndAngle"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignRight="@+id/editTextLockEndAngle"
+            android:layout_alignEnd="@+id/editTextLockEndAngle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_host_lock_settings_direction"
+                android:gravity="left"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:id="@+id/textView11"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_host_lock_settings_direction"
+                android:gravity="left"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:id="@+id/textViewLockDirection"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/editTextLockStartAngle"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignRight="@+id/seekBarLockRotationEndpoint"
+            android:layout_alignEnd="@+id/seekBarLockRotationEndpoint"
+            android:layout_alignLeft="@+id/seekBarLockRotationEndpoint"
+            android:layout_alignStart="@+id/seekBarLockRotationEndpoint" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:id="@+id/editTextLockEndAngle"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/editTextLockStartAngle"
+            android:layout_alignRight="@+id/editTextLockStartAngle"
+            android:layout_alignEnd="@+id/editTextLockStartAngle"
+            android:layout_alignLeft="@+id/editTextLockStartAngle"
+            android:layout_alignStart="@+id/editTextLockStartAngle"
+            android:layout_marginTop="10dp"
+            android:gravity="right" />
+
+        <Button
+            android:id="@+id/buttonLockDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="@string/button_delete"
+            android:background="@drawable/corner"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/buttonLockSave"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignRight="@+id/buttonLockSave"
+            android:layout_alignEnd="@+id/buttonLockSave"
+            android:layout_alignLeft="@+id/buttonLockSave"
+            android:layout_alignStart="@+id/buttonLockSave" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,56 @@
+ String sqlUser = "CREATE TABLE USER " + 
+					   "(USER_ID int    NOT NULL, " +
+					   " NAME varchar    NOT NULL , " +
+					   " PRIMARY_PHONE_NUMBER int    NOT NULL , " +
+					   " IS_MOBILE_VERIFIED char   NOT NULL , " +
+					   " COUNTRY varchar    NOT NULL , " +
+					   " PASSWORD varchar    NOT NULL , " +
+					   " USER_STATE char    NOT NULL , " +
+					   " DATE_OF_BIRTH date    NOT NULL , " +
+					   " GENDER char    NOT NULL , " +
+					   " EMAIL_ADDRESS varchar    NOT NULL , " +
+					   " ZIP_CODE int    NOT NULL , " +
+					   " ICON varchar    NOT NULL, " +
+					   "PRIMARY KEY USER_ID )";
+					   
+      
+      String sqlProperty =" CREATE TABLE PROPERTY (" +
+			    		   "PROPERTY_ID int    NOT NULL, " +
+			    		   "USER_ID int		NOT NULL" +
+			    		   "DESCRIPTION varchar()    NOT NULL ," +
+			    		   "ADDRESS varchar()    NOT NULL ," +
+			    		   "CITY varchar()    NOT NULL ," +
+			    		   "ZIP_CODE int    NOT NULL ," +
+			    		   "STATE varchar()    NOT NULL ," +
+			    		   "COUNTRY varchar()    NOT NULL ," +
+			    		   "OWNERSHIP varchar()    NOT NULL), " +
+			    		   "PRIMARY KEY PROPERTY_ID, " +
+			    		   "FOREIGN KEY (USER_ID) REFERENCES USER(USER_ID))";
+			    		   
+	  String sqlLock = "CREATE TABLE LOCK (" +
+					   "LOCK_ID int    NOT NULL," +
+					   "DESCRIPTION varchar()    NOT NULL ," +
+					   "IS_LOCKED bool    NOT NULL ," +
+					   "LOCK_POWER double    NOT NULL ," +
+					   "LOCK_START_ANGLE double()    NOT NULL ," +
+					   "LOCK_END_ANGLE double()    NOT NULL ," +
+					   "ROTATION_DIRECTION char()    NOT NULL ," +
+					   "ROTATION_END_POINTS double()    NOT NULL, " + 
+					   "PRIMARY KEY LOCK_ID, " +
+					   "FOREIGN KEY (LOCK_ID) REFERENCES PROPERTIES(PROPERTY_ID))";
+					  
+	  String sqlLockActivity = "CREATE TABLE LOCK_ACTIVITY (" +
+							   "LOCK_ID int    NOT NULL ," + 
+							   "GUEST_ID int    NOT NULL ," + 
+							   "HOST_ID int    NOT NULL ," +
+							   "ACCESS_START_TIME date    NOT NULL ," + 
+							   "ACCESS_END_TIME date    NOT NULL ," + 
+							   "REQUEST_ACCESS_TIMESTAMP date    NOT NULL ," + 
+							   "REQUEST_STATUS bool    NOT NULL ,"  +
+							   "ALERT int NOT NULL, " +
+							   "FOREIGN KEY (LOCK_ID) REFERENCES LOCK(LOCK_ID)";
+	  String sqlGuestLock = "CREATE TABLE GUEST_LOCK (" +
+			  				"USER_ID int    NOT NULL ," + 
+							"LOCK_ID int    NOT NULL ," +
+							"FOREIGN KEY (USER_ID) REFERENCES USER(USER_ID)" +
+	  						"FOREIGN KEY (LOCK_ID) REFERENCES LOCK(LOCK_ID))";

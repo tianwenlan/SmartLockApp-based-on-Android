@@ -1,0 +1,44 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="#ffffff"
+    android:gravity="clip_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_host_space"
+        android:id="@+id/textViewLock"
+        android:gravity="center"
+        android:textColor="#FF9900"
+        android:textSize="18sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageViewProfile"
+        android:layout_alignEnd="@+id/imageViewProfile" />
+
+    <Button
+        android:id="@+id/buttonAddSpace"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="@string/button_add_space"
+        android:background="@drawable/corner"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textViewLock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:id="@+id/listViewSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollingCache="false"
+        android:layout_below="@+id/buttonAddSpace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

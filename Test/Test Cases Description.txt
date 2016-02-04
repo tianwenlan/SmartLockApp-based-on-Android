@@ -1,0 +1,45 @@
+Test Cases:
+
+00	Login interface
+01	Click create account, navigate to registration interface.
+02	Edit user information
+03	Input verification code for registration
+04	Registration succeed. Navigate to host main page. The default fragment is space list.
+05	Login failed because of wrong password. 
+06	Login succeed as a Host. Navigate to host main page. The default fragment is space list.
+07	Click the button on the bottom, switch to edit profile fragment
+08	Edit the profile. Update succeed.
+09	Go to space fragment again.
+10	Click add space. Navigate to space edit interface.
+11	Added a space. We can see the list view updated as well.
+12	Long click an item in the list to edit it.
+13	Edit the space. Update succeed.
+14	Click an item of space to show locks of this space.
+15	Click add lock button to add a new lock for the space.
+16	Edit the new lock.
+17	Added a lock. The list view of locks updated as well.
+18	Click the item to edit it again. Update succeed.
+19	Navigate to Lock fragment. Display all the locks belonging to current user.
+20	Navigate to Event fragment. Display all the pending and accepted lock requests.
+21	CLick accept button of the sencond item to accept a request. Then the accept and reject button disappeared.
+22	CLick accept button of the third item to reject a request. Then the entire item disappeared.
+23	Navigate to history fragment. Display all the past lock request.
+24	Restart the app. This time we login as a Guest.
+25	Login succeed as a Guest. Navigate to guest main page. The default fragment is lock list.
+26	Open a lock.
+27	CLose a lock.
+28	Navigate to edit profile interface. Handle the exception for failure to get avatar image from url.
+29	Navigate to Event fragment.
+30 	Click Add an Event to edit a request for lock.
+31	Step 1, search for a host. If you click search button without enter a phonenumber, a warning message will pop up.
+32	Input a valid phone number. Click search to go to step 2.
+33	Step 2, select a space of the host to go to step 3.
+34	Step 3, enter the start and end date you want to use the lock of this select space.
+35	Step 3 invalid input exception handling.
+36	Enter a valid date.
+37	Successfully sent a request.
+38	Navigate to history fragment.
+
+
+
+

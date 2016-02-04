@@ -1,0 +1,52 @@
+1. UI design and Implementation
+
+In order to achieve an user-friendly UI, we used many beautiful pictures, complex android widgets and so many adjustments of details of the UI. We also used relative layout in most cases to make sure that our app can be used in 2 different resolution device.
+
+2. Implementations of OOD and OOP in our App
+
+We applied the concepts of OOD and OOP into our project in purpose of making our project modularized. We divided the design of our project into different layers and used interfaces between different layers.
+
+3. Designs of Database Schema and Server-Side Web project
+
+There is a relatively much more complicated relationship between the entites. We have spent a lot of time on analyzing the relationships and processes of CRUD operations.
+
+
+
+
+There are mainly 3 kinds of exception handling: 
+1. Input Validation Exception Handling. This is mainly in UI layer.(Client Side)
+
+Examples:
+class Name                     PackageName                   Exception Handling                   
+GuestMainStep1RAFragment      com.example.simsim.ui     it will check the input phone number format,if it is not a number then throws an exception and the exception will be watched and show a Toast.
+
+2. Network Exception Handling. This is mainly in UI layer and business logic layer.(Client Side)
+
+Example:
+class Name                                      PackageName                   Exception Handling  
+EntityAdapter(Business Logic Layer)             com.example.simsim.entities    if there is something wrong with the connection between the client and server, the function authenticate(String primaryPhoneNumber, String password) will throws an exception.
+
+LoginActivity(UI layer)                      com.example.simsim.ui          in this class, it will call the function authenticate(String primaryPhoneNumber, String password). And use try catch to grab the exception thrown by this function.         
+
+3. Database Exception Handling. This is mainly in the Server side web program.(Server Side)
+
+Example:
+class Name                     PackageName                   Exception Handling  
+DbAdapter                   database                    every database operation was surrounded with try catch clause in order to deal with the exceptions occurred in DB operations.
+
+
+Class Diagram Classification:
+1. There are three main layers in our project: UI layer,  Business logic layer and DB operations layer.
+Between UI layer and Business logic layer, we used many interfaces, which have various functionalities. The relationship between UI layer and interfaces is containment, which means that UI classes will have a instance variable of corresponding interface and these instance variables are initialized by using a instance object of EntityAdapter class in Business Logic layer. The Business logic layer implements all interfaces between UI layer and Business logic layer.
+
+2.Our project Object-Oriented design and Object-Oriented programming to modularize our program.All of the 4entity classes were encapsulated and were contained in Information class.  All of the CURD operations were contained in EntityAdapter class, which contains a instance of Information class.  All of the operations can only visit the entity classes through EntityAdapter class and cannot visit entity class directly.
+
+3. UI layer can be divided into three parts: Login and register part, Host part and Guest part.
+For host part, we used call back interface called HostFragmentCallBackInterface, which allows various fragment contained in HostMainActivity to communicate with HostMainActivity. For Guest part, we used callback interface called GuestFragmentCallBackInterface, which allows various fragment contained in GuestFragmentCallBackInterface to communicate with GuestFragmentCallBackInterface. Various fragments will contain different interfaces in order to realize different functionalities.
+
+4. Business logic Layer contains 3 parts: entity classes, EntityAdapter class and HttpConnection class.
+There are 4 entity classes: User, Property, Lock and LockActivity. They are all encapsulated individually. There is also a class called Information, which contains various objects of 4 entity classes. 
+The class EntityAdapter implements various interface and implementations of functions in interfaces. This class also contains a static object of Information class. EntityAdapter also uses HttpConnection class to send and receive object stream to communicate with server.
+
+
+

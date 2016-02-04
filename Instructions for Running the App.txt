@@ -1,0 +1,7 @@
+Instructions for running the project:
+1. There are 2 source folders: SmartLockApp and SmartLockBackEnd. The folder of SmartLockApp is the Android client-side source project, which can be imported into AndroidStudio directly. The folder of SmartLockBackEnd is the server-side source project, which can be imported into Eclipse and run on tomcat directly.
+
+2. Setting up the DB.
+There is a java file “DbAdapter.java” in package “database”in the source folder of SmartLockBackEnd. Change the username and password in line 19 and 20 to your MySQL username and password. Then just run this java file and you can set up the DB and tables in MySQL.
+
+3. Run the source project of SmartLockBackEnd on tomcat at first. Then, run the source project of SmartLockApp in AndroidStudio. Now, you can try our app on Android Emulator.

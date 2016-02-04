@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 1 out of 3"
+        android:textColor="#ff606060"
+        android:textSize="26dp"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search your host to send access request"/>
+    <EditText
+        android:id="@+id/hostPhoneET"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:hint="host's mobile number"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/searchHostPhoneButton"
+        android:layout_width="246dp"
+        android:layout_height="46dp"
+        android:text="Search"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/corner"/>
+
+</LinearLayout>

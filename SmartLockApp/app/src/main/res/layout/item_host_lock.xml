@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    android:gravity="clip_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewPropertyImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lock_default" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lock Name"
+        android:gravity="left|center"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        android:id="@+id/textViewtSpaceLockName"
+        android:layout_below="@+id/imageViewPropertyImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_right_arrow"
+        android:gravity="left|center"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/imageViewPropertyImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

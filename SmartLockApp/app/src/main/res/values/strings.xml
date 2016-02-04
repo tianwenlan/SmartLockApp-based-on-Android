@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">test1</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title">Locks</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_register">register</string>
+    <string name="title_activity_verification">Verification</string>
+    <string name="title_activity_my_space">Space</string>
+    <string name="title_activity_host_add_property">HostAddPropertyActivity</string>
+    <string name="title_activity_host_lock">HostLockActivity</string>
+    <string name="title_activity_host_lock_settings">HostLockSettingsActivity</string>
+
+    <string name="textview_create_a_profile">Create a profile</string>
+    <string name="textview_create_a_profile_description">Make it easy for your hosts to identify \n you with a good picture</string>
+    <string name="textview_birthday">Birthday</string>
+    <string name="textview_gender">Gender</string>
+    <string name="textview_gender_male">Male</string>
+    <string name="textview_gender_female">Female</string>
+    <string name="textview_email">Email</string>
+    <string name="textview_zip_code">ZIP Code</string>
+    <string name="textview_I_am">I am a</string>
+    <string name="button_confirm">Confirm</string>
+
+    <string name="textview_right_arrow">></string>
+
+    <string name="textview_host_space">Space</string>
+    <string name="textview_host_space_detail">Detail</string>
+    <string name="textview_host_space_name">Name of Space</string>
+    <string name="textview_host_space_name_2">Give your space a descriptive name.</string>
+    <string name="textview_host_space_description">Description</string>
+    <string name="textview_host_space_description_2">Describe your space briefly.</string>
+    <string name="textview_host_space_address">Address</string>
+    <string name="textview_host_space_address_2">Enter full address of your space.</string>
+    <string name="textview_host_space_zip_code">Zip Code</string>
+    <string name="textview_host_space_city">City</string>
+    <string name="textview_host_space_state">State</string>
+    <string name="textview_host_space_country">Country</string>
+    <string name="textview_host_space_privacy">Privacy</string>
+    <string name="textview_host_space_privacy_2">Public / Private</string>
+    <string name="textview_host_space_extra_information">Extra Information</string>
+    <string name="textview_host_space_extra_information_2">
+        Add extra note to your guest. (ex) Wifi password
+    </string>
+
+    <string name="textview_host_lock">Locks</string>
+    <string name="textview_host_lock_add">Add a Lock</string>
+    <string name="textview_host_lock_settings">Lock Settings</string>
+    <string name="textview_host_lock_settings_lable">Label:</string>
+    <string name="textview_host_lock_settings_lock_name">Lock Name</string>
+    <string name="textview_host_lock_settings_lock_id">Lock ID</string>
+    <string name="textview_host_lock_settings_lock_notification">Push Notification</string>
+    <string name="textview_host_lock_settings_setup">Setup:</string>
+    <string name="textview_host_lock_settings_power">Power</string>
+    <string name="textview_host_lock_settings_rotation">Rotation Endpoint</string>
+    <string name="textview_host_lock_settings_start_angle">Set Locked Start Angle</string>
+    <string name="textview_host_lock_settings_end_angle">Set Locked End Angle</string>
+    <string name="textview_host_lock_settings_direction">Rotation Direction</string>
+
+    <string name="textview_host_event">Events</string>
+    <string name="textview_host_event_add">Add an Event</string>
+    <string name="textview_host_event_add_schedule">Add a Schedule</string>
+    <string name="textview_host_event_name">Event Name</string>
+    <string name="textview_host_event_access">Access</string>
+    <string name="textview_host_event_all_day">All Day</string>
+    <string name="textview_host_event_starts">Starts</string>
+    <string name="textview_host_event_ends">Ends</string>
+    <string name="textview_host_event_repeat">Repeat</string>
+    <string name="textview_host_event_ends_repeat">Ends Repeat</string>
+    <string name="textview_host_event_alert">Alert</string>
+
+    <string name="textview_edit_profile">Edit Profile</string>
+
+    <string name="textview_host_history">History</string>
+
+    <string name="textview_host">Host</string>
+    <string name="textview_guest">Guest</string>
+
+    <string name="button_add_space">Add Space</string>
+    <string name="button_add_lock">Add Lock</string>
+    <string name="button_add_event">Add Event</string>
+    <string name="button_add_more">Add More</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+
+    <string name="title_activity_host_schedule_add">HostScheduleAddActivity</string>
+    <string name="title_activity_host_event_access">HostEventAccessActivity</string>
+    <string name="title_activity_host_history">HostHistoryActivity</string>
+    <string name="title_activity_host_space">HostSpaceActivity</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_host_main">HostMainActivity</string>
+    <string name="title_activity_host_space_lock">HostSpaceLockActivity</string>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.simsim.ui" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity android:name=".VerificationActivity">
+        </activity>
+        <activity android:name=".HostMainActivity">
+        </activity>
+        <activity android:name=".HostSpaceSettingsActivity">
+        </activity>
+        <activity android:name=".HostSpaceLockActivity">
+        </activity>
+        <activity android:name=".HostLockSettingsActivity">
+        </activity>
+        <activity android:name=".GuestMainActivity" >
+        </activity>
+        <activity android:name=".GuestAddEventActivity" >
+        </activity>
+        <activity android:name=".GuestAlertActivity" >
+        </activity>
+        <activity android:name=".GuestCustomRepeatActivity" >
+        </activity>
+        <activity android:name=".GuestEndRepeatActivity" >
+        </activity>
+        <activity android:name=".GuestRepeatActivity" >
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

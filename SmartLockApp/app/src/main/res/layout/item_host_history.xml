@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    android:gravity="clip_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lock Name"
+        android:id="@+id/textViewLock"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/textViewLock"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/right_arrow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lock Manager"
+        android:id="@+id/textViewHost"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:layout_below="@+id/textViewLock"
+        android:layout_toLeftOf="@+id/imageView5"
+        android:layout_toStartOf="@+id/imageView5"
+        android:paddingTop="5dp"
+        android:gravity="right"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accessed User"
+        android:id="@+id/textViewtSpaceLockName"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/textViewLock"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:paddingLeft="10dp"
+        android:gravity="left" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlocked Time"
+        android:id="@+id/textViewTime"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

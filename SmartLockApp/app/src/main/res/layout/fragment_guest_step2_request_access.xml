@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 2 out of 3"
+        android:textColor="#ff606060"
+        android:textSize="26dp"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select space to schedule your access"
+        android:layout_marginBottom="20dp"/>
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/default_host"/>
+    <TextView
+        android:id="@+id/requestHostNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textColor="#ff606060"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spaces"
+        android:textColor="#FE9A2E"
+        android:layout_marginTop="10dp"/>
+
+
+    <!--should add GridView showing the all the spaces of the host-->
+    <GridView
+        android:id="@+id/gridOfSpaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:gravity="center"
+        >
+
+    </GridView>
+
+</LinearLayout>

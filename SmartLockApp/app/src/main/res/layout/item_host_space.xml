@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    android:gravity="clip_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewPropertyImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/no_photo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_host_space_name"
+        android:gravity="left|center"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        android:id="@+id/textViewtSpaceLockName"
+        android:layout_below="@+id/imageViewPropertyImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_right_arrow"
+        android:gravity="left|center"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:id="@+id/textView25"
+        android:paddingRight="20dp"
+        android:layout_alignTop="@+id/textViewPropertyLockNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# of Locks"
+        android:gravity="left|center"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:id="@+id/textViewPropertyLockNumber"
+        android:paddingRight="20dp"
+        android:layout_alignBottom="@+id/textViewtSpaceLockName"
+        android:layout_toLeftOf="@+id/textView25"
+        android:layout_toStartOf="@+id/textView25" />
+</RelativeLayout>

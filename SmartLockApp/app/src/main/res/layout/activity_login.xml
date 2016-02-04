@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ffffff"
+        android:gravity="center_horizontal">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp" />
+        <!-- Logo Ends -->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dip"
+            android:weightSum="1"
+            android:id="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:singleLine="true"
+                android:id="@+id/editTextPhoneNumber"
+                android:hint="mobile number"
+                android:inputType="phone" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:singleLine="true"
+                android:password="true"
+                android:id="@+id/editTextPassword"
+                android:hint="password" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot password"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="#FE9A2E"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Login"
+                android:background="@drawable/corner"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/link_to_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Create Account"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#FE9A2E"
+                android:onClick="goToRegister" />
+        </LinearLayout>
+        <!-- Login Form -->
+
+
+        <!-- Login Form Ends -->
+    </RelativeLayout>
+</LinearLayout>
